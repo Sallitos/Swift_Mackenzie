@@ -14,7 +14,7 @@ public class Aluno: Pessoa{
     }
 
     override func getDescricao() -> String{
-        return "\(super.getDescricao()) Matricula: \(matricula) Plano: \(plano)"
+        return "\(super.getDescricao()) Matricula: \(matricula) Plano: \(plano.nome)"
     }
 
 }
