@@ -1,12 +1,12 @@
-class AulaPersonal: Aula {
-    var aluno: Aluno
+public class Instrutor: Pessoa {
+    private var especialidade: String
 
-    init(nome: String, instrutor: Instrutor, aluno: Aluno) {
-        self.aluno = aluno
-        super.init(nome: nome, instrutor: instrutor)
+    init(nome: String, email: String, especialidade: String) {
+        self.especialidade = especialidade
+        super.init(nome: nome, email: email)
     }
 
-    override func getDescricao() -> String {
-        return "\(super.getDescricao()) para o aluno: \(aluno.nome)"
+    override func getDescricao() -> String{
+        return "\(super.getDescricao()) que tem especialidade em: \(self.especialidade)"
     }
 }

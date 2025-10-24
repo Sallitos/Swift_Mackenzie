@@ -1,6 +1,6 @@
 class Aula {
-    let nome: String
-    var instrutor: Instrutor
+    internal let nome: String
+    private var instrutor: Instrutor
 
     init(nome: String, instrutor: Instrutor){
         self.nome = nome
