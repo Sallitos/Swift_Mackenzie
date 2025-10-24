@@ -65,4 +65,4 @@ for teste in aulasLista{
 var pessoasLista: [Pessoa] = [aluno1, aluno2, instrutor1, instrutor2]
 for teste in pessoasLista{
     print(teste.getDescricao())
-}
+    }

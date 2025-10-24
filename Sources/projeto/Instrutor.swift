@@ -1,8 +1,12 @@
-import Foundation
+public class Instrutor: Pessoa {
+    private var especialidade: String
 
-public protocol Manutencao {
-    var nomeItem: String {get}
-    var dataUltimaManutencao: String {get}
+    init(nome: String, email: String, especialidade: String) {
+        self.especialidade = especialidade
+        super.init(nome: nome, email: email)
+    }
 
-    func realizarManutencao() -> Bool
+    override func getDescricao() -> String{
+        return "\(super.getDescricao()) que tem especialidade em: \(self.especialidade)"
+    }
 }
